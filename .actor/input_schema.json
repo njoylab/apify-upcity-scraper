@@ -1,0 +1,24 @@
+{
+    "title": "Sustainalytics.com ESG Ratings Scraper",
+    "type": "object",
+    "schemaVersion": 1,
+    "properties": {
+        "url": {
+            "title": "URL",
+            "type": "string",
+            "description": "Full URL of the category or company profile",
+            "editor": "textfield",
+            "default": "https://upcity.com/advertising?page=3&list_sort_by=review_count&list_sort_order=desc&filter=0"
+        },
+        "page": {
+            "title": "Page",
+            "type": "integer",
+            "description": "Page number to scrape, only used for category pages",
+            "minimum": 1,
+            "default": 1
+        }
+    },
+    "required": [
+        "url"
+    ]
+}

@@ -1,0 +1,13 @@
+{
+	"actorSpecification": 1,
+	"name": "upcity-companies-scraper",
+	"title": "Upcity Companies Scraper",
+	"description": "Upcity.com Companies Scraper",
+	"version": "0.0",
+	"buildTag": "latest",
+	"meta": {
+		"templateId": "ts-empty"
+	},
+	"dockerfile": "./Dockerfile",
+	"input": "./input_schema.json"
+}
