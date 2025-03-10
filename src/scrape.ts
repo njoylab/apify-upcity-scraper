@@ -8,9 +8,9 @@ export async function getCategory(url: string, page: number, proxy?: string) {
     if (query) {
         query += `&page=${page}`;
     } else {
-        query = `?page=${page}`;
+        query = `page=${page}`;
     }
-    const fetchurl = `https://upcity.com/${category}.json${query}`;
+    const fetchurl = `https://upcity.com/${category}.json?${query}`;
     const data = await gotScraping({
         url: fetchurl,
         proxyUrl: proxy,
